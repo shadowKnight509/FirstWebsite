@@ -50,32 +50,12 @@ function getRating(){
 	document.getElementById('rateReturn').innerHTML = "Thanks for your rating of " + rateBoxVal;
 }
 
-function forLoopPractice1(iVal){
-	
-	for (let i = 0; i <= iVal; i++) {
-		console.log("i is: " + i);
-	}
-
-}
-
-function forLoopPractice2(iVal){
-	
-	for (let i = 0; i <= iVal; i++) {
-		for (let j = 0; j <= iVal; j++) {
-			console.log("i is: " + i + " and j is: "+ j);
-		}
-	}
-
-}
-
-//forLoopPractice2(4);
-
 let clickCount = 0;
 
 function addChar(e){
 	let buttonClicked = e.target;  //get specific button clicked;
 	
-	if (buttonClicked.innerHTML == 'X' || buttonClicked.innerHTML == 'O'){
+	if (buttonClicked.innerHTML === 'X' || buttonClicked.innerHTML === 'O'){
 		alert("Cheaters never prosper, that spot has been taken already!!!!!");
 		return;  //leave function, don't execute the rest of the code in this function.
 	}
@@ -85,7 +65,7 @@ function addChar(e){
 	
 	//figure out if X or O;
 	let xo;
-	if (clickCount % 2 == 0)
+	if (clickCount % 2 === 0)
 		xo = 'X';
 	else
 		xo = 'O';
@@ -110,7 +90,7 @@ function showTictactoe(){
 	
 	for (let tic = 1; tic <= 9; tic++){ 
 		let tichead = document.getElementById('tictac').innerHTML;
-		if(tic % 3 == 0){
+		if(tic % 3 === 0){
 			document.getElementById("tictac").innerHTML = tichead +
 			"<button data-num='"+tic+"' onclick='addChar(event);' class='ticTacButton'>&nbsp;</button></br>";
 		}else{
@@ -125,7 +105,7 @@ function madlibReveal(){
 
 	var comp = madlibPanel.currentStyle || getComputedStyle(madlibPanel, null);
 	
-	if (comp.display == "none") {
+	if (comp.display === "none") {
 		madlibPanel.style.display = "block";
 	} else 
 		madlibPanel.style.display = "none";
@@ -136,7 +116,7 @@ function madlibReveal(){
 function madlibs(){
 	let isValid = userValidationMadlibs();
 	
-	if (isValid == false)
+	if (isValid === false)
 		return;		
 	
 	let pronoun1 = document.getElementById('pronoun1').value;
@@ -151,21 +131,20 @@ function madlibs(){
 	let verb4 = document.getElementById('verb4').value;
 	let noun4 = document.getElementById('noun4').value;
 	let verb5 = document.getElementById('verb5').value;
-	let madLib = pronoun1 + " had a " + noun1 + " store" + 
-				" but today he was feeling very " + adjective1 +
-				" so he " + verb1 + " to the " + noun2 + ". " + 
-				"At the " + noun2 + " he decided to " + verb2 + 
-				" he " + verb2 + "ed so much that his " + noun3 +
-				" told him off! then his " + noun3 + 
-				" pulled him by the "+ bodypart + " away from the " 
-				+ noun2 + " and dragged him back home were he continued " 
-				+ verb2 +"ing in peace. Eventually he got bored of " 
-				+ verb2 + "ing so he started learning to " + verb3 + 
-				" and he learnt how to " + verb3 + " like a professional "
-				+ verb3 + "er so he got bored again and he " + verb4 + 
-				"ed over to the " + noun4 + " and " + verb5 ;
-				
-	document.getElementById('madiv').innerHTML = madLib;
+	document.getElementById('madiv').innerHTML = pronoun1 + " had a " + noun1 + " store" +
+															" but today he was feeling very " + adjective1 +
+															" so he " + verb1 + " to the " + noun2 + ". " +
+															"At the " + noun2 + " he decided to " + verb2 +
+															" he " + verb2 + "ed so much that his " + noun3 +
+															" told him off! then his " + noun3 +
+															" pulled him by the "+ bodypart + " away from the "
+															+ noun2 + " and dragged him back home were he continued "
+															+ verb2 +"ing in peace. Eventually he got bored of "
+															+ verb2 + "ing so he started learning to " + verb3 +
+															" and he learnt how to " + verb3 + " like a professional "
+															+ verb3 + "er so he got bored again and he " + verb4 +
+															"ed over to the " + noun4 + " and " + verb5 ;
+
 	document.getElementById('madlibPanel').style.display = "none";
 }
 
