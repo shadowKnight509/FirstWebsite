@@ -96,8 +96,8 @@ function addChar(e){
 let ticTacToeControl = false;
 
 function ticTacToe(){
-	if (ticTacToeControl == false){
-		showTictactoe()
+	if (ticTacToeControl === false){
+		showTictactoe();
 		ticTacToeControl = true;
 	}else{ 
 		document.getElementById("tictac").innerHTML = null;
@@ -184,40 +184,40 @@ function userValidationMadlibs(){
 	let verb5 = document.getElementById('verb5').value;
 	
 	if(pronoun1 == null || pronoun1 == ''){
-		alert("You haven't filled in your pronoun")
+		alert("You haven't filled in your pronoun");
 		return false;
 	} else if (noun1 == null || noun1 == ''){
-		alert("You haven't filled in your noun")
+		alert("You haven't filled in your noun");
 		return false;
 	} else if(adjective1 == null || adjective1 == ''){
-		alert("You haven't filled in your adjective")
+		alert("You haven't filled in your adjective");
 		return false;
 	} else if (verb1 == null || verb1 == ''){
-		alert("You haven't filled in your verb")
+		alert("You haven't filled in your verb");
 		return false;
 	} else if (noun2 == null || noun2 == ''){
-		alert("You haven't filled in your noun")
+		alert("You haven't filled in your noun");
 		return false;
 	} else if (verb2 == null || verb2 == ''){
-		alert("You haven't filled in your verb")
+		alert("You haven't filled in your verb");
 		return false;
 	} else if (noun3 == null || noun3 == ''){
-		alert("You haven't filled in your noun")
+		alert("You haven't filled in your noun");
 		return false;
 	} else if (bodypart == null || bodypart == ''){
-		alert("You haven't filled in your body part")
+		alert("You haven't filled in your body part");
 		return false;
 	} else if (verb3 == null || verb3 == ''){
-		alert("You haven't filled in your verb")
+		alert("You haven't filled in your verb");
 		return false;
 	} else if (verb4 == null || verb4 == ''){
-		alert("You haven't filled in your verb")
+		alert("You haven't filled in your verb");
 		return false;
 	}else if (noun4 == null || noun4 == ''){
-		alert("You haven't filled in your noun")
+		alert("You haven't filled in your noun");
 		return false;
 	}else if (verb5 == null || verb5 == ''){
-		alert("You haven't filled in your verb")
+		alert("You haven't filled in your verb");
 		return false;
 	}
 
