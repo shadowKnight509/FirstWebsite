@@ -1,0 +1,93 @@
+body {
+  background-image:  url("../assets/images/dragon2.jpg");
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: courier;
+  font-size: 20px;
+  color: white;
+}
+
+button {
+	color: black;
+}
+	
+ul {
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  background-color: #dddddd;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+active {
+  background-color: green;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.ticTacButton {
+	background-color: blue;
+	height: 50;
+	width: 50;
+}
+
+#madlibPanel {
+	display: none;
+}
+     
+.formElementTitle {
+	color: white;
+}
+
+a {
+  color: white;
+}

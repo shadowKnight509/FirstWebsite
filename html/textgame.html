@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>text_game</title>
+		<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+		<script type="text/javascript" src="../javascript/myscripts.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script>
+			$(function(){
+				$("#menuBar").load("menu.html");
+			});
+		</script>
+	</head>
+	<body>
+	<div id="menuBar"></div>
+		<p>Let's play some fun games!<p>
+		
+		<button onclick="ticTacToe();">Play Tic Tac Toe</button>
+		<div>
+			<h1 id="tictac"></h1>
+		</div>
+			
+		</br>
+						
+		<button onclick="madlibReveal();">Play madlibs</button>	
+		<div id= "madlibPanel">
+			<form id="numForm">
+				<span class="formElementTitle">pro noun:</span><br>
+				<input id="pronoun1" type="text" name="pronoun1" value=""><br>
+				
+				<span class="formElementTitle">noun:</span><br>
+				<input id="noun1" type="text" name="noun1" value=""><br>
+				
+				<span class="formElementTitle">adjective:</span><br>
+				<input id="adjective1" type="text" name="adjective1" value=""><br>
+				
+				<span class="formElementTitle">verb (past tense):</span><br>
+				<input id="verb1" type="text" name="verb1" value=""><br>
+				
+				<span class="formElementTitle">noun:</span><br>
+				<input id="noun2" type="text" name="noun2" value=""><br>
+				
+				<span class="formElementTitle">verb:</span><br>
+				<input id="verb2" type="text" name="verb2" value=""><br>
+				
+				<span class="formElementTitle">noun:</span><br>
+				<input id="noun3" type="text" name="noun3" value=""><br>
+				
+				<span class="formElementTitle">body part:</span><br>
+				<input id="bodypart" type="text" name="bodypart" value=""><br>
+				
+				<span class="formElementTitle">verb:</span><br>
+				<input id="verb3" type="text" name="verb3" value=""><br>
+				
+				<span class="formElementTitle">verb:</span><br>
+				<input id="verb4" type="text" name="verb4" value=""><br>
+				
+				<span class="formElementTitle">noun:</span><br>
+				<input id="noun4" type="text" name="noun4" value=""><br>
+				
+				<span class="formElementTitle">verb (past tense):</span><br>
+				<input id="verb5" type="text" name="verb5" value=""><br>
+				
+				<br></br>
+				<input type="button" value="Submit" onclick="madlibs()">
+			</form>
+		</div>
+		<div> 
+			<h1 id = madiv></h1>
+		</div>
+		
+	</body>
+</html>
