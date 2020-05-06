@@ -1,50 +1,49 @@
-<html>
-	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script type="text/javascript" src="../javascript/myscripts.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
-		<title>Page</title>
 
-		<script>
-			$(function(){
-				$("#menuBar").load("menu.html");
-			});
-		</script>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../javascript/myscripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+	<title>Page</title>
 
-	</head>
-	<body>
+	<script>
+		$(function(){
+			$("#menuBar").load("menu.html");
+		});
+	</script>
 
-		<div id="menuBar"></div>
-		<h1 style="font-size:60px;">This is my home page!</h1>
-		<a class="click-me" href="haha.html">Click me to go somewhere cool</a>
-		
-		<!--<form id="numForm">
-			First number:<br>
-			<input id="num1" type="text" name="num1" value=""><br>
-			second number:<br>
-			<input id="num2" type="text" name="num2" value=""><br>
-			<select id = operation>
-				<option value="add">add</option>
-				<option value="sub">sub</option>
-				<option value="mull">mull</option>
-				<option value="div">div</option>
-			</select>
-			<br></br>
-			<input type="button" value="Submit" onclick="processNumbers();">
-		</form>-->
-			<h1 id="calcAnswer"></h1>
-		<div>
-		</div>
-		
-		<form id="rateForm">
-			<label for="rating"></label><select id = "rating">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-			</select>
-			<input type="button" value="rating submit" onclick="getRating();">
-		</form>
-		<div><h1 id="rateReturn"> </h1></div>
-/html>
+</head>
+<body>
+
+<div id="menuBar"></div>
+<h1 style="font-size:60px;">This is my home page!</h1>
+<a class="click-me" href="haha.html">Click me to go somewhere cool</a>
+
+<!--<form id="numForm">
+    First number:<br>
+    <input id="num1" type="text" name="num1" value=""><br>
+    second number:<br>
+    <input id="num2" type="text" name="num2" value=""><br>
+    <select id = operation>
+        <option value="add">add</option>
+        <option value="sub">sub</option>
+        <option value="mull">mull</option>
+        <option value="div">div</option>
+    </select>
+    <br></br>
+    <input type="button" value="Submit" onclick="processNumbers();">
+</form>-->
+<h1 id="calcAnswer"></h1>
+<div>
+</div>
+
+<form id="rateForm">
+	<label for="rating"></label><select id = "rating">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+</select>
+	<input type="button" value="rating submit" onclick="getRating();">
+</form>
+<div><h1 id="rateReturn"> </h1></div>
