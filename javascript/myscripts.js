@@ -202,3 +202,10 @@ function userValidationMadlibs(){
 
 	return true;
 }
+
+function joke(){
+	console.log('im in joke');
+	for (let dayJ = 1;dayJ <= 31; dayJ++ ){
+		document.getElementById('jokeDiv').innerHTML = "set it"
+	}
+}
