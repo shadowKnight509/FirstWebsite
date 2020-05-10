@@ -203,9 +203,38 @@ function userValidationMadlibs(){
 	return true;
 }
 
-function joke(){
+function getTodaysJoke(){
 	console.log('im in joke');
-	for (let dayJ = 1;dayJ <= 31; dayJ++ ){
-		document.getElementById('jokeDiv').innerHTML = "set it"
-	}
+
+	//determine today's day
+	let date = new Date();
+	let day = date.getDate();
+
+	//get joke that corresponds to today's day
+	let jokeOfDay = arrayTest[day];
+
+	//replace innerHTML with today's joke
+	document.getElementById("jokeP").innerHTML = jokeOfDay;
 }
+
+let arrayTest = ["What's the best thing about Switzerland? I don't know, but the flag is a big plus."
+	, "Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them." //joke 1
+	, "Why do we tell actors to break a leg? Because every play has a cast." //joke 2
+	,"How many times can you subtract 10 from 100? Once. The next time you would be subtracting 10 from 90."// joke 3
+	, "Hear about the new restaurant called Karma? There's no menu: You get what you deserve." // joke 4
+	, "A bear walks into a bar and says, Give me a whiskey... and a cola. Why the big pause? asks the bartender. The bear shrugged. I'm not sure. I was born with them." // joke 5
+	,"6"
+	, "7"
+	, "8"
+	,"9"
+	, "10"
+	, "11"
+	,"12"
+	, "13"
+	, "14"
+	,"15"
+	, "16"
+	, "17"
+	,"18"
+	, "19"
+	, "20"];
