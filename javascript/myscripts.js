@@ -211,43 +211,42 @@ function getTodaysJoke(){
 	let day = date.getDate();
 
 	//get joke that corresponds to today's day
-	let jokeOfDay = arrayTest[day];
+	let jokeOfDay = arrayTest[day -1];
 
 	//replace innerHTML with today's joke
 	document.getElementById("jokeP").innerHTML = jokeOfDay;
 }
 
 
-let arrayTest = ["just filling some space" // joke0
-	, "Did you hear about the mathematician who's afraid of negative numbers?" //joke 1
-	, "Why do we tell actors to \"break a leg?\"\n" + "Because every play has a cast." //joke 2
-	,"How many times can you subtract 10 from 100?\n" + "Once. The next time you would be subtracting 10 from 90.."// joke 3
-	, "Hear about the new restaurant called Karma?\n" + "There's no menu: You get what you deserve." // joke 4
-	, "A bear walks into a bar and says, \"Give me a whiskey... and a cola.\"\n" + "\"Why the big pause?\" asks the bartender. The bear shrugged. \"I'm not sure. I was born with them.\"" // joke 5
-	,"Did you hear about the claustrophobic astronaut?\n" + "He just needed a little space." // joke 6
-	, "Why don’t scientists trust atoms?\n" + "Because they make up everything." // joke 7
-	, "Where are average things manufactured?\n" + "The satisfactory." // joke 8
-	,"How do you drown a hipster?\n" + "Throw him in the mainstream." // joke 9
-	, "What does a nosy pepper do?\n" + "Gets jalapeno business!" // joke 10
-	, "Why can’t you explain puns to kleptomaniacs?\n" + "They always take things literally." // joke 11
-	,"How do you keep a bagel from getting away?\n" + "Put lox on it." // joke 12
-	, "What's the best thing about Switzerland?\n" + "I don't know, but the flag is a big plus." // joke 13
-	, "A man tells his doctor, “Doc, help me. I’m addicted to Twitter!”\n" + "The doctor replies, “Sorry, I don’t follow you...”" // joke 14
-	,"What kind of exercise do lazy people do?\n" + "Diddly-squats." // joke 15
-	, "What do you call a parade of rabbits hopping backwards?\n" + "A receding hare-line." // joke 16
-	, "What did the Tin Man say when he got run over by a steamroller?\n" + "“Curses! Foil again!”" // joke 17
-	,"What did the left eye say to the right eye?\n" + "Between you and me, something smells." // joke 18
-	, "What do you call a fake noodle?\n" + "An impasta." // joke 19
-	, "How do you make a tissue dance?\n" + "Put a little boogie in it." // joke 20
-	, "What do you call a pony with a cough?\n" + "A little horse." // joke 21
-	, "What did one hat say to the other?\n" + "You wait here. I'll go on a head." // joke 22
-	, "What do you call a magic dog?\n" + "A labracadabrador." // joke 23
-	, "What did the shark say when he ate the clownfish?\n" + "This tastes a little funny." // joke 24
-	, "Why can't you hear a pterodactyl go to the bathroom?\n" + "Because the \"P\" is silent." // joke 25
-	, "What did the pirate say when he turned 80?\n" + "Aye matey." // joke 26
-	, "What did the buffalo say when his son left for college?\n" + "Bison." // joke 27
-	, "What is an astronaut's favourite part on a computer?\n" + "The space bar." // joke 28
-	, "What do you call an apology written in dots and dashes?\n" + "Re-Morse code." // joke 29
-	, "Did you hear about the two people who stole a calendar?\n" + "They each got six months." // joke 30
-	, "How do poets say hello?\n" + "Hey, haven’t we metaphor?" // joke 31
+let arrayTest = ["How do poets say hello?\n" + "Hey, haven’t we metaphor?" // joke1
+	, "Did you hear about the mathematician who's afraid of negative numbers?" //joke 2
+	, "Why do we tell actors to \"break a leg?\"\n" + "Because every play has a cast." //joke 3
+	,"How many times can you subtract 10 from 100?\n" + "Once. The next time you would be subtracting 10 from 90.."// joke 4
+	, "Hear about the new restaurant called Karma?\n" + "There's no menu: You get what you deserve." // joke 5
+	, "A bear walks into a bar and says, \"Give me a whiskey... and a cola.\"\n" + "\"Why the big pause?\" asks the bartender. The bear shrugged. \"I'm not sure. I was born with them.\"" // joke 6
+	,"Did you hear about the claustrophobic astronaut?\n" + "He just needed a little space." // joke 7
+	, "Why don’t scientists trust atoms?\n" + "Because they make up everything." // joke 8
+	, "Where are average things manufactured?\n" + "The satisfactory." // joke 9
+	,"How do you drown a hipster?\n" + "Throw him in the mainstream." // joke 10
+	, "What does a nosy pepper do?\n" + "Gets jalapeno business!" // joke 11
+	, "Why can’t you explain puns to kleptomaniacs?\n" + "They always take things literally." // joke 12
+	,"How do you keep a bagel from getting away?\n" + "Put lox on it." // joke 13
+	, "What's the best thing about Switzerland?\n" + "I don't know, but the flag is a big plus." // joke 14
+	, "A man tells his doctor, “Doc, help me. I’m addicted to Twitter!”\n" + "The doctor replies, “Sorry, I don’t follow you...”" // joke 15
+	,"What kind of exercise do lazy people do?\n" + "Diddly-squats." // joke 16
+	, "What do you call a parade of rabbits hopping backwards?\n" + "A receding hare-line." // joke 17
+	, "What did the Tin Man say when he got run over by a steamroller?\n" + "“Curses! Foil again!”" // joke 18
+	,"What did the left eye say to the right eye?\n" + "Between you and me, something smells." // joke 19
+	, "What do you call a fake noodle?\n" + "An impasta." // joke 20
+	, "How do you make a tissue dance?\n" + "Put a little boogie in it." // joke 21
+	, "What do you call a pony with a cough?\n" + "A little horse." // joke 22
+	, "What did one hat say to the other?\n" + "You wait here. I'll go on a head." // joke 23
+	, "What do you call a magic dog?\n" + "A labracadabrador." // joke 24
+	, "What did the shark say when he ate the clownfish?\n" + "This tastes a little funny." // joke 25
+	, "Why can't you hear a pterodactyl go to the bathroom?\n" + "Because the \"P\" is silent." // joke 26
+	, "What did the pirate say when he turned 80?\n" + "Aye matey." // joke 27
+	, "What did the buffalo say when his son left for college?\n" + "Bison." // joke 28
+	, "What is an astronaut's favourite part on a computer?\n" + "The space bar." // joke 29
+	, "What do you call an apology written in dots and dashes?\n" + "Re-Morse code." // joke 30
+	, "Did you hear about the two people who stole a calendar?\n" + "They each got six months." // joke 31
 ];
